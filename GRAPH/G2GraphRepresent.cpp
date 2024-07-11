@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     int n,m;
-    cin>>n>>m;
+    cin>>n>>m;  // Read number of vertices (n) and number of edges (m)
     //graph here
     int adj[n+1][m+1];
     for(int i=0;i<m;i++){ 
