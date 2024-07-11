@@ -55,17 +55,4 @@ public:
         
         return tm;
     }
-};
-
-// Example usage
-int main() {
-    Solution sol;
-    vector<vector<int>> grid = {
-        {2, 1, 1},
-        {1, 1, 0},
-        {0, 1, 1}
-    };
-    int result = sol.orangesRotting(grid);
-    // Output: 4
-    return 0;
 }
