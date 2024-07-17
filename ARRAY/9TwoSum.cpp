@@ -26,8 +26,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
             right--;
         }
     }
-
-    return {}; // Return an empty vector if no solution is found
+    return {}; 
 }
 
 int main() {
