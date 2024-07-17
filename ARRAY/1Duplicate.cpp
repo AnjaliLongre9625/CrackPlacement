@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int findDuplicate(vector<int> &nums){
+int findDuplicates(vector<int> &nums){
 
     int slow = nums[0];
     int fast = nums[0];
@@ -22,5 +22,5 @@ int findDuplicate(vector<int> &nums){
     int main(){
         vector<int> nums;
         nums = {1, 2, 3, 4, 2, 2};
-        cout << " dno:" << findDuplicate(nums);
+        cout << " dno:" << findDuplicates(nums);
     }
