@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool isValid(string s) {
+bool isValidParenthesis(string s) {
     int n=s.size();
     stack<char>st;
     for(int i=0;i<n;i++){
@@ -26,7 +26,7 @@ bool isValid(string s) {
 
 int main(){
  string s="({})[]{()}";
- if(isValid(s))
+ if(isValidParenthesis(s))
         cout << "true" <<endl;
     else
         cout << "false" <<endl;
