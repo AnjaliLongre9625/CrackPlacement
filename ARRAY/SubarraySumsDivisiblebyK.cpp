@@ -2,13 +2,13 @@
 using namespace std;
 int subarraysDivByK(vector<int>& nums, int k) {
     unordered_map<int,int>m;
-
+    int n=nums.size();
     int ans=0;
     int rem=0;
     int sum=0;
     
     m[rem]++;
-    for(int i=0;i<nums.size();i++){
+    for(int i=0;i<n;i++){
          sum+=nums[i];
          rem=sum % k;
 
