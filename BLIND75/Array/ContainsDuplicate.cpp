@@ -17,13 +17,10 @@ bool containsDuplicate(vector<int>& nums) {
 int main() {
     Solution solution;
 
-    // Example input
     vector<int> prices = {7, 1, 5, 3, 6, 4};
 
-    // Call the containsDuplicate function
     bool result = solution.containsDuplicate(prices);
 
-    // Output the result
     cout << "containsDuplicate: " << (result ? "true" : "false") << endl;
 
     return 0;
