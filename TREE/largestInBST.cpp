@@ -33,15 +33,12 @@ void inorder(Node* node, vector<int>& arr) {
 int kthLargest(Node* root, int K) {
     vector<int> arr;
     
-    // Perform inorder traversal and store elements in sorted order
     inorder(root, arr);
     
-    // The Kth largest element is the (size - K)th element in the sorted array
     int kLargest = arr[arr.size() - K];
     return kLargest;
 }
 
-// Utility function to insert a new node into the BST
 Node* insert(Node* root, int key) {
     if (!root) {
         return new Node(key);
