@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Recursive function to calculate the maximum chocolates
 int f(int i, int j1, int j2, int r, int c, vector<vector<int>> &grid, vector<vector<vector<int>>> &dp) {
     // Base case: Out of bounds conditions
     if (j1 < 0 || j2 < 0 || j1 >= c || j2 >= c)
