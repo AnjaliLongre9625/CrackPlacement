@@ -17,33 +17,26 @@ public:
     // Function to perform preorder traversal
     // of a binary tree iteratively
     vector<int> preorderTraversal(TreeNode* root) {
-        vector<int> preorder;
-        
-        // If the root is null, return an empty result
-        if (root == nullptr) {
+        vector<int>preorder;
+        if(root==nullptr){
             return preorder;
         }
-        
-        stack<TreeNode*> st;
+        stack<TreeNode*>st;
         st.push(root);
-        
-        while (!st.empty()) {
-            TreeNode* node = st.top();
+        while(!st.empty()){
+
+            TreeNode*node=st.top();
             st.pop();
-            
-            // Visit the root node
+
             preorder.push_back(node->val);
-            
-            // Push right and left children to stack
-            // (right child pushed first so that left child is processed first)
-            if (node->right) {
+
+            if(node->right){
                 st.push(node->right);
             }
-            if (node->left) {
+            if(node->left){
                 st.push(node->left);
             }
         }
-        
         return preorder;
     }
 };
