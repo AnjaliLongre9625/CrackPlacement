@@ -6,29 +6,26 @@
 using namespace std;
 
 int totalFruits(vector<int> &arr) {
-    int n = arr.size();
-    int max_len = 0;
-    unordered_map<int, int> mpp;  // Tracks the count of each fruit type in the window
-    
-    int l = 0;  // Left boundary of the window
-    
-    for (int r = 0; r < n; r++) {
-        mpp[arr[r]]++;  // Add the current fruit to the window
-
-        // Shrink the window from the left if there are more than 2 types of fruits
-        while (mpp.size() > 2) {
-            mpp[arr[l]]--;
-            if (mpp[arr[l]] == 0) {
-                mpp.erase(arr[l]);  // Remove the fruit type from the map if its count is zero
-            }
-            l++;
+        int n=arr.size();
+        int max_len=0;
+        unordered_map<int,int>mpp;
+        
+        int l=0,r=0;
+        
+        while(r<n){
+            mpp[arr[r]]++;
+            
+            if(mpp.size()>2){
+                mpp[arr[l]]--;
+                if(mpp[arr[l]]==0) {
+                    mpp.erase(arr[l]);
+                }
+             l++;
+           }
+        if(mpp.size()<=2) max_len=max(max_len,r-l+1);
+          r++;
         }
-
-        // Update max_len if the window has at most 2 types of fruits
-        max_len = max(max_len, r - l + 1);
-    }
-    
-    return max_len;
+        return max_len;
 }
 
 int main() {
