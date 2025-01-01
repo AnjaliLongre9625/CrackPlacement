@@ -38,3 +38,4 @@ int main() {
     cout << "Page faults: " << pageFaults(N, C, pages) << endl;
     return 0;
 }
+        
