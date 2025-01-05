@@ -26,7 +26,7 @@ public:
     }
 
     bool isCyclic(int V, vector<vector<int>>& adj) {
-        vector<int> vis(V, 0);    // Visited array to mark visited nodes
+        vector<int> vis(V, 0);    
         vector<int> pathVis(V, 0); // Array to track the current path
         
         for (int i = 0; i < V; i++) {
