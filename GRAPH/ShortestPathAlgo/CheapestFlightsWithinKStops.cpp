@@ -47,7 +47,7 @@ int main() {
     int K = 1;
 
     int result = obj.CheapestFLight(n, flights, src, dst, K);
-    cout << "Cheapest price: " << result << endl;
+    cout << "Cheapest price flights: " << result << endl;
 
     return 0;
 }
