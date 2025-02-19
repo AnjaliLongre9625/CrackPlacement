@@ -1,60 +1,48 @@
 #include <iostream>
 using namespace std;
 
+// Definition for a binary tree node
 struct TreeNode {
     int val;
-    TreeNode *left, *right;
+    TreeNode* left;
+    TreeNode* right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
 class Solution {
 public:
     TreeNode* deleteNode(TreeNode* root, int key) {
-        if (root == NULL) return NULL;
-        if (root->val == key) return helper(root);
-        TreeNode* dummy = root;
-        while (root != NULL) {
-            if (root->val > key) {
-                if (root->left != NULL && root->left->val == key) {
-                    root->left = helper(root->left);
-                    break;
-                } else {
-                    root = root->left;
-                }
-            } else {
-                if (root->right != NULL && root->right->val == key) {
-                    root->right = helper(root->right);
-                    break;
-                } else {
-                    root = root->right;
-                }
-            }
+        if (root == NULL) return root; // If tree is empty, return NULL
+
+        // Search for the node to delete
+        if (root->val > key) {
+            root->left = deleteNode(root->left, key); // Search in the left subtree
+        } 
+        else if (root->val < key) {
+            root->right = deleteNode(root->right, key); // Search in the right subtree
+        } 
+        else { // Node found
+            // Case 1: Node has no left child
+            if (!root->left) return root->right;
+            // Case 2: Node has no right child
+            if (!root->right) return root->left;
+            
+            // Case 3: Node has both left and right children
+            TreeNode* lastrightValue = findLastRight(root->left); // Find largest node in left subtree
+            lastrightValue->right = root->right; // Attach right subtree to it
+            return root->left; // Replace node with left subtree
         }
-        return dummy;
+        return root;
     }
 
-    TreeNode* helper(TreeNode* root) {
-        if (root->left == NULL) {
-            return root->right;
-        }
-        if (root->right == NULL) {
-            return root->left;
-        }
-        TreeNode* rightChild = root->right;
-        TreeNode* lastRight = findlast(root->left);
-        lastRight->right = rightChild;
-        return root->left;
-    }
-
-    TreeNode* findlast(TreeNode* root) {
-        if (root->right == NULL) {
-            return root;
-        }
-        return findlast(root->right);
+    // Function to find the rightmost node in a subtree
+    TreeNode* findLastRight(TreeNode* root) { 
+        while (root->right) root = root->right; // Stop at last right node
+        return root; 
     }
 };
 
-// Helper function to print the BST in inorder traversal
+// Helper function to print inorder traversal of BST
 void inorder(TreeNode* root) {
     if (root == NULL) return;
     inorder(root->left);
@@ -62,26 +50,27 @@ void inorder(TreeNode* root) {
     inorder(root->right);
 }
 
+// Main function to test deleteNode function
 int main() {
-    // Create a sample BST
+    Solution sol;
+    
+    // Constructing BST
     TreeNode* root = new TreeNode(5);
     root->left = new TreeNode(3);
-    root->right = new TreeNode(6);
+    root->right = new TreeNode(7);
     root->left->left = new TreeNode(2);
     root->left->right = new TreeNode(4);
-    root->right->right = new TreeNode(7);
+    root->right->left = new TreeNode(6);
+    root->right->right = new TreeNode(8);
 
-    cout << "Original BST (inorder traversal): ";
+    cout << "Original Tree (Inorder): ";
     inorder(root);
     cout << endl;
 
-    Solution sol;
-    int key = 3;
-    
-    // Delete the node with the specified key
+    int key = 5;
     root = sol.deleteNode(root, key);
 
-    cout << "BST after deleting node with key " << key << " (inorder traversal): ";
+    cout << "Tree after deleting " << key << " (Inorder): ";
     inorder(root);
     cout << endl;
 
