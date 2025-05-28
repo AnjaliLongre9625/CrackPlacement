@@ -59,9 +59,6 @@ int main() {
 
     Solution sol;
     int maxWidth = sol.widthOfBinaryTree(root);
-
-    cout << "Maximum width of the binary tree is: " << maxWidth << endl;
-
-
+    cout << "Maximum width of the BT is: " << maxWidth << endl;
     return 0;
 }
