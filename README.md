@@ -43,25 +43,35 @@ Feel free to contribute to this repository:
 
 ### To contribute:
 
-1. Fork the repository  
-2. Create a new branch:
+1. **Fork** the repository  
+2. **Create a new branch**:
 
-```bash
-git checkout -b feature-branch
-3.Make your changes
-4.Commit and push:
-git add .
-git commit -m "Your meaningful commit message"
-git push origin feature-branch
+    ```bash
+    git checkout -b feature-branch
+    ```
 
-5.Open a pull request 🚀
+3. **Make your changes**
 
+4. **Commit and push your changes**:
 
-📜 License
-This project is open-source and available under the MIT License.
+    ```bash
+    git add .
+    git commit -m "Your meaningful commit message"
+    git push origin feature-branch
+    ```
 
-🙏 Acknowledgements
-Big thanks to Striver (Raj Vikramaditya) for curating the
-DSA Sheet
-Also, shoutout to the DSA community and open-source contributors who make learning easier every day!
+5. **Open a pull request** 🚀
 
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 🙏 Acknowledgements
+
+Big thanks to **Striver (Raj Vikramaditya)** for curating the amazing  
+[DSA Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)  
+Also, shoutout to the awesome DSA community and open-source contributors who make learning easier every day!
