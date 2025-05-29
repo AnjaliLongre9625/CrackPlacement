@@ -15,15 +15,9 @@ public:
 };
 int main() {
     Solution solution;
-
-    // Example input
-    vector<int> prices = {7, 1, 5, 3, 6, 4};
-
-    // Call the maxProfit function
-    int result = solution.maxProfit(prices);
-
-    // Output the result
-    cout << "Maximum Profit: " << result << endl;
+    vector<int> prices = {7, 1, 5, 3, 6, 4};// Example input
+    int result = solution.maxProfit(prices);// Call the maxProfit function
+    cout << "Maximum Profit: " << result << endl;// Output the result
 
     return 0;
 }
