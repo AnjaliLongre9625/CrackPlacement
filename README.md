@@ -32,6 +32,58 @@ Check out Striver's official DSA Sheet here:
 
 ---
 
+## 🧾 How to Run Locally
+
+Follow these simple steps to run the project on your local machine:
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/your-username/StriverC++DSA.git
+    ```
+
+    > Replace `your-username` with your GitHub username if you forked the repo.
+
+2. **Navigate into the project directory**
+
+    ```bash
+    cd StriverC++DSA
+    ```
+
+3. **Explore the folders**
+
+    Each topic is organized in its own folder. You can navigate into any folder you want:
+
+    ```bash
+    cd 01_Arrays
+    ```
+
+4. **Compile and run a C++ file**
+
+    Use `g++` to compile and run any `.cpp` file:
+
+    ```bash
+    g++ ProblemName.cpp -o output
+    ./output
+    ```
+
+    **Example:**
+
+    ```bash
+    g++ ReverseArray.cpp -o reverse
+    ./reverse
+    ```
+
+5. **Requirements**
+
+    Make sure you have these installed:
+
+    - C++ Compiler (`g++` recommended)  
+    - Git  
+    - Any IDE or text editor (VS Code preferred)  
+    - Basic knowledge of C++ and DSA
+---
+
 ## 🤝 Contribution
 
 Feel free to contribute to this repository:
