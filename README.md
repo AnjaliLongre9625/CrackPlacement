@@ -67,13 +67,6 @@ Follow these simple steps to run the project on your local machine:
     ./output
     ```
 
-    **Example:**
-
-    ```bash
-    g++ ReverseArray.cpp -o reverse
-    ./reverse
-    ```
-
 5. **Requirements**
 
     Make sure you have these installed:
