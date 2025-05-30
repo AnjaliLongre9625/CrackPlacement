@@ -14,6 +14,6 @@ using namespace std;
 int main(){
     vector<int> prices = {7,1,5,3,6,4};
     int ans = maxProfit(prices);
-    cout << "The max profit is: " << ans << endl;
+    cout << "The max profit after see=lling is: " << ans << endl;
     return 0;
 }
