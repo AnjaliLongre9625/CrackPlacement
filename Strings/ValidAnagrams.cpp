@@ -6,8 +6,8 @@ using namespace std;
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        // Check if the lengths of the two strings are different
-        if (s.size() != t.size()) {
+        
+        if (s.size() != t.size()) {// Check if the lengths of the two strings are different
             return false; 
         }
 
