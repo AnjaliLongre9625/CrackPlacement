@@ -15,11 +15,11 @@ public:
         for (auto x : strs) {
             string temp = x; // Store the original string
             sort(temp.begin(), temp.end()); // Sort the string
-            mpp[temp].push_back(x); // Add the original string to the corresponding sorted key
+            mpp[temp].push_back(x); // Add the original string to  corresponding sorted key
         }
         
         for (auto it : mpp) {
-            ans.push_back(it.second); // Collect all grouped anagrams
+            ans.push_back(it.second); // Collect all the grouped anagrams
         }
         
         return ans;
