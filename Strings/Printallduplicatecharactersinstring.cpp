@@ -4,6 +4,7 @@ using namespace std;
 void printDup(string str){
     int n = str.size();
     unordered_map<char, int> count;
+    
     for (int i = 0; i < n; i++){
         count[str[i]]++;
     }
