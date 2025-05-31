@@ -3,11 +3,14 @@ using namespace std;
 
 bool isValidParenthesis(string s) {
     int n=s.size();
+    
     stack<char>st;
+
     for(int i=0;i<n;i++){
         if(s[i]=='(' || s[i]=='[' || s[i]== '{'){
             st.push(s[i]);
-        }else{
+        }
+        else{
             if(st.empty()) return false;
             char t=st.top();
             st.pop();
@@ -15,7 +18,7 @@ bool isValidParenthesis(string s) {
                (s[i] == ']' && t != '[') ||
                (s[i] == '}' && t != '{')) {
                 return false;
-               }
+            }
         }
     }
     if(st.empty()){
