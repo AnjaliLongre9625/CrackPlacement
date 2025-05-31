@@ -18,7 +18,7 @@ public:
                 cnt++;
             }
 
-            res += to_string(cnt) + ch; // Append count and character
+            res += to_string(cnt) + ch; // Append count & the character
         }
         
         return res;
