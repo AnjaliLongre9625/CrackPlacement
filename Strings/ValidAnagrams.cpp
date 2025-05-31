@@ -13,11 +13,9 @@ public:
 
         unordered_map<char, int> mp; // Use char as key for characters
 
-        // Count occurrences of each character in the first string
-        for (auto c : s) {
+        for (auto c : s) {// Count occurrences of each character in the first string
             mp[c]++;
         }
-
         // Decrease the count for each character in the second string
         for (char c : t) {
             if (mp.find(c) == mp.end() || mp[c] == 0) {
