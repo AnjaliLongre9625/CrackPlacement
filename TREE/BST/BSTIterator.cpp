@@ -25,7 +25,7 @@ public:
         myStack.pop();
 
         // If there is a right subtree, push all its left children
-        pushAll(temp->right);
+        pushAll(temp->right);//left child push it
         return temp->val;
     }
 
