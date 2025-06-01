@@ -27,9 +27,7 @@ void inorder(Node* node, vector<int>& arr) {
 
 int kthLargest(Node* root, int K) {
     vector<int> arr;
-    
     inorder(root, arr);
-    
     int kLargest = arr[arr.size() - K];
     return kLargest;
 }
