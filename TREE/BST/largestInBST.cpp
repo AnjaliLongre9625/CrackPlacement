@@ -20,8 +20,8 @@ void inorder(Node* node, vector<int>& arr) {
         return;
     }
     
-    // Recursive call to the left subtree
-    inorder(node->left, arr);
+    
+    inorder(node->left, arr);// Recursive call to the left subtree
     // Store the current node's data
     arr.push_back(node->data);
     // Recursive call to the right subtree
