@@ -12,6 +12,7 @@ struct Node {
     }
 };
 
+
 class Solution {
 public:
     bool solve(Node *root, int min, int max) {

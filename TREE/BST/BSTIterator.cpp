@@ -33,7 +33,6 @@ public:
     bool hasNext() {
         return !myStack.empty();
     }
-
 private:
     // Helper function to push all left children of a node onto the stack
     void pushAll(TreeNode* node) {
@@ -44,12 +43,14 @@ private:
     }
 };
 
+
 void inorder(TreeNode* root) {
     if (root == NULL) return;
     inorder(root->left);
     cout << root->val << " ";
     inorder(root->right);
 }
+
 
 int main() {
     // Creating a sample BST
@@ -59,11 +60,12 @@ int main() {
     root->right->left = new TreeNode(9);
     root->right->right = new TreeNode(20);
 
+
     // Initialize the BST iterator
     BSTIterator iterator(root);
 
-    // Iterate over the BST
-    cout << "BST Inorder Traversal: ";
+   
+    cout << "BST Inorder Traversal: "; // Iterate over the BST
     while (iterator.hasNext()) {
         cout << iterator.next() << " ";
     }
