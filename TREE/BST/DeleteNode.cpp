@@ -73,6 +73,5 @@ int main() {
     cout << "Tree after deleting " << key << " (Inorder): ";
     inorder(root);
     cout << endl;
-
     return 0;
 }

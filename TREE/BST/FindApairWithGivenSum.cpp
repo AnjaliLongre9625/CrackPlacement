@@ -50,7 +50,6 @@ TreeNode* createTestTree() {
 int main() {
     Solution obj;
     TreeNode* root = createTestTree();
-
     int k1 = 9;
     int k2 = 28;
 

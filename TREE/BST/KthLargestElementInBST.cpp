@@ -24,7 +24,6 @@ public:
             result = root->val;
             return;
         }
-
         inorder(root->right, target);
     }
 

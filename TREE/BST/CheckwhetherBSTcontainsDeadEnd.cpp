@@ -19,8 +19,8 @@ public:
         if (!root)
             return false;
         
-        // If the current node is a leaf node and min equals max, it's a dead end.
-        if (min == max)
+      
+        if (min == max)  // If the current node is a leaf node and min equals max, it's a dead end.
             return true;
 
         return solve(root->left, min, root->data - 1) || solve(root->right, root->data + 1, max);
@@ -55,6 +55,7 @@ int main() {
     root = insert(root, 11);
     root = insert(root, 4);
 
+    
     if (solution.isDeadEnd(root))
         cout << "The BST contains a dead end.\n";
     else

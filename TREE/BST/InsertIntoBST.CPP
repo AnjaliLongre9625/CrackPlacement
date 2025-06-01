@@ -54,6 +54,5 @@ int main() {
     // Print inorder traversal of the tree
     inorder(root);
     cout << endl;
-
     return 0;
 }

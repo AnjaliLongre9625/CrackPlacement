@@ -62,6 +62,7 @@ int main() {
     root2->left->right = new TreeNode(4);
     root2->left->left->left = new TreeNode(1);
 
+    
     Solution sol2;
     cout << "Example 2:\n";
     cout << "K-th smallest (k=3): " << sol2.kthSmallest(root2, 3) << endl; // Output: 3

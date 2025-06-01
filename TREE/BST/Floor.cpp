@@ -70,6 +70,7 @@ int main() {
     Solution sol;
     int result = sol.floor(root, x);
 
+    
     if (result == -1)
         cout << "No floor exists for " << x << " in the BST." << endl;
     else

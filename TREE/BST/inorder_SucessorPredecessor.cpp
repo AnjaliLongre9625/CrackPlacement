@@ -21,6 +21,7 @@ Node* insert(Node* root, int key) {
 
 class Solution {
   public:
+  
     vector<Node*> findPreSuc(Node* root, int key) {
         Node* successor = nullptr;
         Node* predecessor = nullptr;
