@@ -24,8 +24,8 @@ void inorder(Node* node, vector<int>& arr) {
     inorder(node->left, arr);// Recursive call to the left subtree
     
     arr.push_back(node->data);// Store the current node's data
-    // Recursive call to the right subtree
-    inorder(node->right, arr);
+    
+    inorder(node->right, arr);// Recursive call to the right subtree
 }
 
 int kthLargest(Node* root, int K) {
