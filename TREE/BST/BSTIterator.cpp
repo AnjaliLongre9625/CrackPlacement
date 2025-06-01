@@ -13,13 +13,11 @@ struct TreeNode {
 class BSTIterator {
 private:
     stack<TreeNode*>myStack;
-
 public:
     // Constructor initializes the iterator by pushing all left children of root onto the stack
     BSTIterator(TreeNode* root) {
         pushAll(root);
     }
-
     // Returns the next smallest number in the BST
     int next() {
         // Get the top element from the stack
