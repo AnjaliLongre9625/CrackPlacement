@@ -12,7 +12,7 @@ struct TreeNode {
 
 class BSTIterator {
 private:
-    stack<TreeNode*> myStack;
+    stack<TreeNode*>myStack;
 
 public:
     // Constructor initializes the iterator by pushing all left children of root onto the stack
