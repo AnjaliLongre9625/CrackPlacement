@@ -10,8 +10,8 @@ struct Node
         data = x;
         next = nullptr;
     }
-
 };
+
 /* Multiply contents of two linked lists */
 class solution {
   public:

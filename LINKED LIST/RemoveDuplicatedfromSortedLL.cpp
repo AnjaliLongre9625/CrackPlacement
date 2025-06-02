@@ -18,7 +18,8 @@ ListNode* deleteDuplicates(ListNode* head) {
             }
         }
         return head;
-    }
+ }
+
 void printList(ListNode* head) {
     while (head != NULL) {
         cout << head->val << " ";

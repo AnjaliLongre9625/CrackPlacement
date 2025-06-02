@@ -26,6 +26,7 @@ public:
             prev = curr;
             curr = next;
         }
+        
         // Step 3: Connect next part (recursive call)
         head->next = reverseKGroup(temp, k);
         return prev; // New head of the reversed group

@@ -14,6 +14,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     ListNode* dummyNode = new ListNode(-1);
     ListNode* temp = dummyNode;
     
+   
     // Traverse both lists while both are not empty
     while (list1 != nullptr && list2 != nullptr) {
         if (list1->val <= list2->val) {

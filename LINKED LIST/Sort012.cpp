@@ -30,10 +30,12 @@ Node* sortList(Node *head) {
             one->next = temp;
             one = temp;
         }
+
         else {
             two->next = temp;
             two = temp;
         }
+        
         temp = temp->next;
     }
 
