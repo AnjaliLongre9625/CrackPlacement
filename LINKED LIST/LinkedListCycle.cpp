@@ -22,7 +22,7 @@ bool hasCycle(ListNode *head) {
             if(slow==fast) return true;
         }
         return false;
-    }
+}
  
 int main(){
     ListNode*head= new ListNode(3);
