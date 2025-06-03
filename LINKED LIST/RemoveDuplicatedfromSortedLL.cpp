@@ -5,6 +5,7 @@ struct ListNode{
     ListNode*next;
     ListNode(int x) : val(x), next(nullptr) {}
 };
+
 ListNode* deleteDuplicates(ListNode* head) {
         ListNode*curr=head;
         while(curr!=NULL && curr->next!=NULL){
