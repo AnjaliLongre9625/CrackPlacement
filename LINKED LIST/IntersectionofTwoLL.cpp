@@ -19,6 +19,7 @@ public:
         ListNode* temp2 = headB;
         
         while (temp1 != temp2) {
+
             temp1 = temp1->next;
             temp2 = temp2->next;
             
@@ -34,6 +35,7 @@ ListNode* createLinkedList(vector<int> values) {
     if (values.empty()) return nullptr;
     ListNode* head = new ListNode(values[0]);
     ListNode* current = head;
+    
     for (int i = 1; i < values.size(); i++) {
         current->next = new ListNode(values[i]);
         current = current->next;
