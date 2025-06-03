@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-struct Node
-{
+struct Node{
     int data;
     Node* next;
 
@@ -11,6 +10,7 @@ struct Node
         next = nullptr;
     }
 };
+
 
 /* Multiply contents of two linked lists */
 class solution {
