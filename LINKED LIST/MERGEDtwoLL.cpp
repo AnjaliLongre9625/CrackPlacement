@@ -10,6 +10,7 @@ struct ListNode {
 
 // Function to merge two sorted linked lists
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+   
     // Create a dummy node to serve as the starting point of the merged list
     ListNode* dummyNode = new ListNode(-1);
     ListNode* temp = dummyNode;
