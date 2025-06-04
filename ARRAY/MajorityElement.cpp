@@ -22,6 +22,7 @@ int majorityElement(vector<int>& nums) {
         nums[i] == cnt1;
         cnt1++;
     }
+    
     if (cnt1 > (n / 2))
         return ele;
     return -1;
