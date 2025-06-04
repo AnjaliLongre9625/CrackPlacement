@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int helper(int ind, int W, vector<int>& val, vector<int>& wt, vector<vector<int>>& dp) {
+int helper( int ind, int W, vector<int>& val, vector<int>& wt, vector<vector<int>>& dp) {
    
     if (ind == 0) {
         return (W / wt[0]) * val[0];
