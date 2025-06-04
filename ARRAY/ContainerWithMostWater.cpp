@@ -11,12 +11,13 @@ int maxArea(vector<int> &height){
         int currheight=min(height[i],height[j]);
         int area=width*currheight;
         maxWater=max(maxWater,area);
-        
+
         if(height[i]<height[j]){
             i++;
         }
         else j--;
     }
+    
     return maxWater;
 }
 
