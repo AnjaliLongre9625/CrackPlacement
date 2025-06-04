@@ -15,6 +15,7 @@ long long findMinDiff(vector<long long> a, long long n, long long m){
     return min_diff;
 }
 
+
 int main(){
     vector<long long> A1 = {3, 4, 1, 9, 56, 7, 9, 12};
     long long N1 = 8;
