@@ -15,8 +15,10 @@ int maxArea(vector<int> &height){
         if(height[i]<height[j]){
             i++;
         }
-        
-        else j--;
+
+        else {
+            j--;
+        }
     }
 
     return maxWater;
