@@ -4,6 +4,7 @@ using namespace std;
 vector<int> findDuplicates(vector<int> &nums){
     int n = nums.size();
     vector<int> result;
+    
     for (int i = 0; i < n; i++){
         int indexToCheck = abs(nums[i]) - 1;
         if (nums[indexToCheck] < 0){
