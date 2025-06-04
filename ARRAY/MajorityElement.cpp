@@ -15,6 +15,7 @@ int majorityElement(vector<int>& nums) {
         else
             cnt--;
     }
+
     // checking if the stored element is the majority element:
     int cnt1 = 0;
     for (int i = 0; i < n; i++){
@@ -27,6 +28,7 @@ int majorityElement(vector<int>& nums) {
 }
 
 int main(){
+    
     vector<int> nums = {2, 2, 1, 1, 1, 2, 2};
     int ans = majorityElement(nums);
     cout << "The majority element is: " << ans << endl;
