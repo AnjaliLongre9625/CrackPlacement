@@ -20,7 +20,6 @@ int maxArea(vector<int> &height){
             j--;
         }
     }
-
     return maxWater;
 }
 
