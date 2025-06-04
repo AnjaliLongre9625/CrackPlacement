@@ -11,7 +11,7 @@ int helper(int ind, int W, vector<int>& val, vector<int>& wt, vector<vector<int>
     if (dp[ind][W] != -1) return dp[ind][W];
 
     int nottake = helper(ind - 1, W, val, wt, dp);
-    
+
     int take = INT_MIN;
 
     if (wt[ind] <= W) {
@@ -34,7 +34,6 @@ int main() {
     
     // Call the function to calculate and output the maximum value the thief can steal
     cout << "The Maximum value of items the thief can steal is " << unboundedKnapsack(n, W, val, wt) << endl;
-
     return 0; // Return 0 to indicate successful program execution
 }
 
