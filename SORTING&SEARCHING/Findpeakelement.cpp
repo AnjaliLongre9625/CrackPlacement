@@ -6,7 +6,8 @@ int findPeak(int arr[], int n) {
     if(n==1) return 0;
     if(arr[0]>arr[1]) return 0;
     if(arr[n-1]>arr[n-2]) return 0;
-    int low=0,high=n-1;
+
+    int low=0,high=n-1; //low
     while(low<high){
         int mid=(low+high)/2;
         if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
