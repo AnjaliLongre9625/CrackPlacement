@@ -40,5 +40,5 @@ int main() {
 
     return 0;
 }
-scp /path/to/local/file anjali@DESKTOP-BQ29HIT
-sftp anjali@DESKTOP-BQ29HIT@remote_ip
+// scp /path/to/local/file anjali@DESKTOP-BQ29HIT
+// sftp anjali@DESKTOP-BQ29HIT@remote_ip
