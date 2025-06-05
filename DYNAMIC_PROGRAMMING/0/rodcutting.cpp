@@ -7,7 +7,6 @@ int helper( int ind, int W, vector<int>& val, vector<int>& wt, vector<vector<int
     if (ind == 0) {
         return (W / wt[0]) * val[0];
     }
-
     if (dp[ind][W] != -1) return dp[ind][W];
 
     int nottake = helper(ind - 1, W, val, wt, dp);
