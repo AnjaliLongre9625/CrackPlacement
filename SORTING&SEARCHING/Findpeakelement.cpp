@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int findPeak(int arr[], int n) {
     if(n==0)return 0;
     if(n==1) return 0;
@@ -23,6 +24,7 @@ int findPeak(int arr[], int n) {
     }
     return -1;
 }
+
 int main() {
     int arr[] = {1, 3, 20, 4, 1, 0};
     int n = sizeof(arr) / sizeof(arr[0]);
