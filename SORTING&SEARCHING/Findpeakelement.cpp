@@ -21,7 +21,6 @@ int findPeak(int arr[], int n) {
             high=mid-1;
         }
     }
-
     return -1;
 }
 
