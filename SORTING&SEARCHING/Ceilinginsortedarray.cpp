@@ -2,7 +2,8 @@
 using namespace std;
 
 int ceilSearch(int arr[], int low, int high, int x, int n) {
-    int mid;
+    int mid;      
+    
     while (low <= high) {
         mid = low + (high - low) / 2;
         if (arr[mid] == x) return mid;
