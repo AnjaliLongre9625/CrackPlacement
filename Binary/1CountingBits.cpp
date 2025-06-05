@@ -11,6 +11,7 @@ public:
         return ans ;
     }
 };
+
 int main() {
     Solution sol;
     int n = 5;  // Example input
