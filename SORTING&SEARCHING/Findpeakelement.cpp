@@ -14,7 +14,6 @@ int findPeak(int arr[], int n) {
         if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
             return mid;
         }
-
         else if(arr[mid]>arr[mid-1]){
             low=mid+1;
         }
