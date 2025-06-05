@@ -1,6 +1,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
+
 bool permute(int a[], int b[], int n, int k){
     sort(a, a + n);                        // sort in ascending
     sort(b, b + n, greater<int>());        // sort in descending
@@ -10,6 +11,7 @@ bool permute(int a[], int b[], int n, int k){
     }
     return false;
 }
+
 int main()
 {
     int a[] = {2, 1, 3};
