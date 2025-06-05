@@ -23,10 +23,10 @@ int findPeak(int arr[], int n) {
     }
     return -1;
 }
-
 int main() {
     int arr[] = {1, 3, 20, 4, 1, 0};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "Index of a peak point is: " << findPeak(arr, n);
+
     return 0;
 }
