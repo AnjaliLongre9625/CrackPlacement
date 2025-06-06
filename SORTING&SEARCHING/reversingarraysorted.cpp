@@ -22,7 +22,6 @@ bool sortArr(int a[], int n) {
             }
         }
     }
-    
     return true;
 }
 
