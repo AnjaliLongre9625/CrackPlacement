@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+
 using namespace std;
 
 class Solution {
@@ -13,7 +14,6 @@ public:
             mini=min(mini,prices[i]);
             maxi=max(maxi,cost);
         }
-
      return maxi;
   }
 };
