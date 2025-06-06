@@ -12,8 +12,8 @@ public:
             mini=min(mini,prices[i]);
             maxi=max(maxi,cost);
         }
+
      return maxi;
-     
   }
 };
 
@@ -22,6 +22,5 @@ int main() {
     vector<int> prices = {7, 1, 5, 3, 6, 4};// Example input
     int result = solution.maxProfit(prices);// Call the maxProfit function
     cout << "Maximum Profit: " << result << endl;// Output the result
-
     return 0;
 }
