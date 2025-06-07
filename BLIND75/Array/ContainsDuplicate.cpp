@@ -6,8 +6,7 @@ class Solution
 public:
     bool containsDuplicate(vector<int> &nums) {
         unordered_set<int> uniqueSet;
-        for (int num : nums)
-        {
+        for (int num : nums){
             if (uniqueSet.count(num) > 0)
             {
                 return true;
