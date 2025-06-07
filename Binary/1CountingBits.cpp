@@ -19,8 +19,7 @@ int main(){
     vector<int> result = sol.countBits(n);
 
     cout << "The count of set bits from 0 to " << n << " is: ";
-    for (int i = 0; i <= n; i++)
-    {
+    for (int i = 0; i <= n; i++){
         cout << result[i] << " ";
     }
     cout << endl;
