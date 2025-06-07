@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     bool containsDuplicate(vector<int> &nums) {
         unordered_set<int> uniqueSet;
@@ -15,11 +14,9 @@ public:
         return false;
     }
 };
-
 int main(){
     Solution solution;
     vector<int> prices = {7, 1, 5, 3, 6, 4};
-
     bool result = solution.containsDuplicate(prices);
 
     cout << "containsDuplicate: " << (result ? "true" : "false") << endl;
