@@ -12,6 +12,7 @@ int minCoins(int coins[], int m, int sum)
             cnt += 1;
         }
     }
+    
     return cnt;
 }
 
