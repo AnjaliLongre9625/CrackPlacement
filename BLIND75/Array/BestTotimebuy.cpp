@@ -13,6 +13,7 @@ public:
             mini=min(mini,prices[i]);
             maxi=max(maxi,cost);
         }
+        
      return maxi;
   }
 };
