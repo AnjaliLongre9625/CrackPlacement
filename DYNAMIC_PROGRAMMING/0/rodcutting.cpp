@@ -1,7 +1,5 @@
-
 #include <bits/stdc++.h>
 using namespace std;
-
 int helper( int ind, int W, vector<int>& val, vector<int>& wt, vector<vector<int>>& dp) {
     if (ind == 0) {
         return (W / wt[0]) * val[0];
@@ -11,7 +9,7 @@ int helper( int ind, int W, vector<int>& val, vector<int>& wt, vector<vector<int
     int nottake = helper(ind - 1, W, val, wt, dp);
 
     int take = INT_MIN;
-    
+
     if (wt[ind] <= W) {
         take = val[ind] + helper(ind, W - wt[ind], val, wt, dp);
     }
