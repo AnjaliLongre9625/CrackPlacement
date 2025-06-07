@@ -9,9 +9,8 @@ int totalFruits(vector<int> &arr) {
         int n=arr.size();
         int max_len=0;
         unordered_map<int,int>mpp;
-        
+  
         int l=0,r=0;
-        
         while(r<n){
             mpp[arr[r]]++;
             
