@@ -13,9 +13,7 @@ public:
         return ans;
     }
 };
-
-int main()
-{
+int main(){
     Solution sol;
     int n = 5; // Example input
     vector<int> result = sol.countBits(n);
