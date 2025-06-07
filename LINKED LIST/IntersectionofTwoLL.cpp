@@ -27,7 +27,6 @@ public:
             if (temp1 == NULL)temp1 = headB;
             if (temp2 == NULL)temp2 = headA;
         }
-        
         return temp1;
     }
 };
