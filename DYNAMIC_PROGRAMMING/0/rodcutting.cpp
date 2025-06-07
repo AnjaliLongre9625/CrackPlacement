@@ -14,10 +14,8 @@ int helper( int ind, int W, vector<int>& val, vector<int>& wt, vector<vector<int
     if (wt[ind] <= W) {
         take = val[ind] + helper(ind, W - wt[ind], val, wt, dp);
     }
-
     return dp[ind][W] = max(take, nottake);
 }
-
 int unboundedKnapsack(int n, int W, vector<int>& val, vector<int>& wt) {
     vector<vector<int>>dp(n,vector<int>(W+1,-1));
     return helper(n-1,W,val,wt,dp);
