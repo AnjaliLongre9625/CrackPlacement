@@ -20,12 +20,14 @@ int totalFruits(vector<int> &arr) {
                     mpp.erase(arr[l]);
                 }
              l++;
-           }
+        }
+
         if(mpp.size()<=2) max_len=max(max_len,r-l+1);
           r++;
         }
+        
         return max_len;
-}
+   }
 
 int main() {
     // Example test case
