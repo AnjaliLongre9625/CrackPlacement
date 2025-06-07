@@ -10,8 +10,9 @@ int minCoins(int coins[], int m, int sum){
             sum -= coins[i];
             cnt += 1;
         }
+        
     }
-    
+
     return cnt;
 }
 
