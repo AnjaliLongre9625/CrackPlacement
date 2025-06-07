@@ -10,7 +10,7 @@ bool containsDuplicate(vector<int>& nums) {
               return true;
           }
           uniqueSet.insert(num);
-      }
+       }
       return false;
      }
    };
