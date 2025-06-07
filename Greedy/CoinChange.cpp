@@ -5,9 +5,9 @@ int minCoins(int coins[], int m, int sum)
 {
     if (sum == 0) return 0;
     int cnt = 0;
+
     for (int i = m - 1; i >= 0; i--){
-        while (sum > coins[i])
-        {
+        while (sum > coins[i]){
             sum -= coins[i];
             cnt += 1;
         }
