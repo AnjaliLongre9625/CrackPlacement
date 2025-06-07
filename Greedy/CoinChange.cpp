@@ -11,17 +11,15 @@ int minCoins(int coins[], int m, int sum){
             cnt += 1;
         }
     }
+    
     return cnt;
 }
 
-
 // Driver program to test above function
-int main()
-{
+int main(){
     int coins[] = {1, 2, 5, 10, 20, 50, 100, 500, 1000};
     int m = sizeof(coins) / sizeof(coins[0]);
     int sum = 49;
-
     cout << "Minimum coins required is " << minCoins(coins, m, sum);
     return 0;
 }
