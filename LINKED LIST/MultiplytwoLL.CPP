@@ -11,7 +11,6 @@ struct Node{
     }
 };
 
-
 /* Multiply contents of two linked lists */
 class solution {
   public:
