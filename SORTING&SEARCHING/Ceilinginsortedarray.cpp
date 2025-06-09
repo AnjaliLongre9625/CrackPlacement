@@ -10,6 +10,7 @@ int ceilSearch(int arr[], int low, int high, int x, int n) {
         else if (arr[mid] > x) high = mid - 1;
         else low = mid + 1;
     }
+    
     // Return low, but ensure it's within bounds
     return (low < n) ? low : -1;
 }
