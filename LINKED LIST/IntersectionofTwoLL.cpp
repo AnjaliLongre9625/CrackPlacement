@@ -13,7 +13,6 @@ public:
 };
 class Solution{
 public:
-   
     ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
         ListNode* temp1 = headA;
         ListNode* temp2 = headB;
