@@ -38,6 +38,7 @@ Node* sortList(Node *head) {
         
         temp = temp->next;
     }
+    
 
     // Link the lists together
     zero->next = onehead->next ? onehead->next : twohead->next;
