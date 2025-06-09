@@ -6,7 +6,6 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
 };
 
-
 class Solution {
 public:
      bool hasCycle(ListNode *head) {
@@ -38,6 +37,7 @@ int main() {
     head2->next->next = new ListNode(7);
     head2->next->next->next = head2->next; // Creating a cycle (points back to the second node)
 
+    
     // Test hasCycle function
     std::cout << "Test 2 - With Cycle: " << (solution.hasCycle(head2) ? "Cycle detected" : "No cycle") << std::endl;
     // Cleanup
