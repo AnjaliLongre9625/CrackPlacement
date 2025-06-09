@@ -4,6 +4,7 @@ struct ListNode {
     ListNode* next;
     ListNode(int x) : val(x), next(nullptr) {}
 };
+
 class Solution {
 public:
      bool hasCycle(ListNode *head) {
@@ -18,6 +19,7 @@ public:
         return false;
     }
 };
+
 int main() {
     Solution solution;
     // Creating a linked list without a cycle
@@ -40,6 +42,7 @@ int main() {
     delete head1->next->next;        // Deleting third node
     delete head1->next;              // Deleting second node
     delete head1;                    // Deleting head node
+
 
     // Since head2 has a cycle, we don't need to delete the list manually
     // Just to avoid memory leak, normally we'd handle this in a destructor
