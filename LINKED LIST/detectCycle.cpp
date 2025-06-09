@@ -6,6 +6,7 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
 };
 
+
 class Solution {
 public:
      bool hasCycle(ListNode *head) {
@@ -20,6 +21,7 @@ public:
         return false;
     }
 };
+
 
 int main() {
     Solution solution;
