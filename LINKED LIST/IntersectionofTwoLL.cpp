@@ -60,6 +60,7 @@ int main() {
     vector<int> listB = {1,2,4,5,4,6,2};
     vector<int> common = {4,6,2};
 
+    
     ListNode* headA = createLinkedList(listA);
     ListNode* headB = createLinkedList(listB);
     ListNode* commonNode = createLinkedList(common);
