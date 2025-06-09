@@ -11,7 +11,6 @@ bool permute(int a[], int b[], int n, int k){
         if (a[i] + b[i] == k)
             return true;
     }
-
     return false;
 }
 
