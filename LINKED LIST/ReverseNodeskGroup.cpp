@@ -17,6 +17,7 @@ public:
             if (!temp) return head; // If fewer than k nodes, return as is
             temp = temp->next;
         }
+        
         // Step 2: Reverse k nodes
         ListNode* prev = NULL;
         ListNode* curr = head;
