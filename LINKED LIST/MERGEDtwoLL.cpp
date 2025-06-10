@@ -14,7 +14,6 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
     // Create a dummy node to serve as the starting point of the merged list
     ListNode* dummyNode = new ListNode(-1);
     ListNode* temp = dummyNode;
-    
    
     // Traverse both lists while both are not empty
     while (list1 != nullptr && list2 != nullptr) {
