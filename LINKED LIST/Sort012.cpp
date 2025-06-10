@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class Node {
 public:
     int data;
@@ -11,6 +10,7 @@ public:
         next = NULL;
     }
 };
+
 
 // Function to sort the linked list
 Node* sortList(Node *head) {
