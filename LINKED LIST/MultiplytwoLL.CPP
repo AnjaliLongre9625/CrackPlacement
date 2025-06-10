@@ -11,6 +11,7 @@ struct Node{
     }
 };
 
+
 /* Multiply contents of two linked lists */
 class solution {
   public:
@@ -30,7 +31,8 @@ class solution {
 
         return(num1*num2)%MOD;
     }
-};void printList(Node* node) {
+};
+void printList(Node* node) {
     while (node != nullptr) {
         cout << node->data << " ";
         node = node->next;
