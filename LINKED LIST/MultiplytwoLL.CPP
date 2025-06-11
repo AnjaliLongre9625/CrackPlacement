@@ -28,7 +28,6 @@ class solution {
             num2=(num2*10+p2->data)%MOD;
             p2=p2->next;
         }
-
         return(num1*num2)%MOD;
     }
 };
