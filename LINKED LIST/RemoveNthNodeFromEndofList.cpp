@@ -14,8 +14,7 @@ ListNode *removeNthFromEnd(ListNode *head, int n){
     for (int i = 0; i < n; i++)
         fast = fast->next;
 
-    if (fast == nullptr)
-        return head->next;
+    if (fast == nullptr) return head->next;
 
     while (fast->next != nullptr) {
         slow = slow->next;
