@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 struct ListNode{
     int val;
     ListNode *next;
@@ -17,7 +18,6 @@ ListNode *removeNthFromEnd(ListNode *head, int n){
         slow = slow->next;
         fast = fast->next;
     }
-
     ListNode *temp = slow->next;
     slow->next = slow->next->next;
     delete temp;
