@@ -26,8 +26,7 @@ ListNode *removeNthFromEnd(ListNode *head, int n){
 }
 
 void printList(ListNode *head){
-    while (head != nullptr)
-    {
+    while (head != nullptr){
         cout << head->val;
         head = head->next;
     }
