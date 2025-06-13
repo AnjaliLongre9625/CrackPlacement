@@ -26,7 +26,6 @@ string addBinary(string a, string b)
     }
     return ans;
 }
-
 int main()
 {
     string a = "11";
