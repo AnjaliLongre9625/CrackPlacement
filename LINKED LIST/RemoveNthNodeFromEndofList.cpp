@@ -6,7 +6,6 @@ struct ListNode{
     ListNode(int x) : val(x), next(nullptr) {}
 };
 
-
 ListNode *removeNthFromEnd(ListNode *head, int n){
     ListNode *fast = head;
     ListNode *slow = head;
