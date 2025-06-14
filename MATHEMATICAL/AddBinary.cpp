@@ -15,8 +15,7 @@ string addBinary(string a, string b)
             x = 1;
         }
         int y = 0;
-        if (i < blen && b[blen - i - 1] == '1')
-        {
+        if (i < blen && b[blen - i - 1] == '1'){
             y = 1;
         }
         ans = to_string((x + y + carry) % 2) + ans;
