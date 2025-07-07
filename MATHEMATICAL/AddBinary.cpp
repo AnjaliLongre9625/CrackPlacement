@@ -7,6 +7,7 @@ string addBinary(string a, string b)
     int carry = 0, i = 0;
     string ans = "";
 
+
     while (i < alen || i < blen || carry != 0){
         int x = 0;
         if (i < alen && a[alen - i - 1] == '1'){
@@ -22,8 +23,7 @@ string addBinary(string a, string b)
     }
     return ans;
 }
-int main()
-{
+int main(){
     string a = "11";
     string b = "101";
     cout << "Add Binary numbers: " << addBinary(a, b) << endl;
