@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 string addBinary(string a, string b){
     int alen = a.length();
     int blen = b.length();
