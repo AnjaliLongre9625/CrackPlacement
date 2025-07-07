@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 string addBinary(string a, string b)
 {
     int alen = a.length();
@@ -10,8 +9,7 @@ string addBinary(string a, string b)
 
     while (i < alen || i < blen || carry != 0){
         int x = 0;
-        if (i < alen && a[alen - i - 1] == '1')
-        {
+        if (i < alen && a[alen - i - 1] == '1'){
             x = 1;
         }
         int y = 0;
