@@ -1,0 +1,999 @@
+EXERCISE 18 — NAMES, VARIABLES, CODE, FUNCTIONS
+Question 1
+
+Create a function that prints "Hello".
+
+Answer
+def hello():
+    print("Hello")
+
+
+hello()
+Question 2
+
+Create a function that prints numbers 1–5.
+
+Answer
+def numbers():
+    print(1)
+    print(2)
+    print(3)
+    print(4)
+    print(5)
+
+
+numbers()
+EXERCISE 19 — FUNCTIONS AND VARIABLES
+Question
+
+Create a function that takes a person's salary and prints annual salary.
+
+Answer
+def annual_salary(monthly_salary):
+    yearly = monthly_salary * 12
+    print("Annual salary:", yearly)
+
+
+annual_salary(50000)
+Hard
+
+Create:
+
+calculate_total(price, quantity)
+Answer
+def calculate_total(price, quantity):
+    total = price * quantity
+    return total
+
+
+amount = calculate_total(250, 3)
+
+print(amount)
+EXERCISE 20 — FUNCTIONS AND FILES
+Question
+
+Create a function that receives a filename and prints its contents.
+
+Answer
+def print_file(filename):
+    with open(filename, "r") as file:
+        print(file.read())
+
+
+print_file("data.txt")
+EXERCISE 21 — FUNCTIONS CAN RETURN SOMETHING
+Question 1
+
+Create a function that returns the square.
+
+Answer
+def square(number):
+    return number * number
+
+
+result = square(5)
+
+print(result)
+Question 2
+
+Create a function that returns the larger of two numbers.
+
+Answer
+def maximum(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+
+print(maximum(10, 20))
+EXERCISE 22 — WHAT DO YOU KNOW SO FAR?
+
+This is a revision exercise.
+
+Challenge
+
+Create a program that:
+
+asks for name
+asks for two numbers
+adds them
+uses a function
+prints the result
+Answer
+def add(a, b):
+    return a + b
+
+
+name = input("Name: ")
+
+num1 = int(input("First number: "))
+num2 = int(input("Second number: "))
+
+result = add(num1, num2)
+
+print(f"{name}, your answer is {result}.")
+EXERCISE 23 — READ SOME CODE
+
+This exercise is about reading unfamiliar code rather than blindly writing code.
+
+Coding Question
+
+What is the output?
+
+x = 10
+y = 20
+
+if x < y:
+    print("A")
+else:
+    print("B")
+
+print(x + y)
+Answer
+A
+30
+Hard
+
+Trace this:
+
+x = 5
+
+for i in range(3):
+    x = x + i
+
+print(x)
+Answer
+8
+
+Because:
+
+i = 0 → x = 5
+i = 1 → x = 6
+i = 2 → x = 8
+EXERCISE 24 — MORE PRACTICE
+Question
+
+Create a function that calculates the average of three numbers.
+
+Answer
+def average(a, b, c):
+    return (a + b + c) / 3
+
+
+result = average(10, 20, 30)
+
+print(result)
+EXERCISE 25 — EVEN MORE PRACTICE
+Question
+
+Create a program that:
+
+takes a sentence
+splits it into words
+prints each word
+prints number of words
+Answer
+sentence = input("Enter a sentence: ")
+
+words = sentence.split()
+
+for word in words:
+    print(word)
+
+print("Number of words:", len(words))
+EXERCISE 26 — TAKE A TEST
+Question 1
+
+Fix this:
+
+def add(a b):
+    return a + b
+Answer
+def add(a, b):
+    return a + b
+Question 2
+
+Fix:
+
+if age >= 18
+    print("Adult")
+Answer
+if age >= 18:
+    print("Adult")
+EXERCISE 27 — MEMORIZING LOGIC
+
+Focus on Boolean logic.
+
+Question
+
+What does this produce?
+
+print(True and True)
+print(True and False)
+print(True or False)
+print(not True)
+Answer
+True
+False
+True
+False
+EXERCISE 28 — BOOLEAN PRACTICE
+Question
+
+Check whether someone can enter based on age.
+
+Answer
+age = 22
+
+print(age >= 18)
+
+Output:
+
+True
+Hard
+
+Check:
+
+age >= 18
+AND
+has_id == True
+Answer
+age = 22
+has_id = True
+
+allowed = age >= 18 and has_id
+
+print(allowed)
+EXERCISE 30 — ELSE AND IF
+Question
+
+Check whether a number is positive, negative or zero.
+
+Answer
+number = int(input("Enter number: "))
+
+if number > 0:
+    print("Positive")
+elif number < 0:
+    print("Negative")
+else:
+    print("Zero")
+EXERCISE 31 — MAKING DECISIONS
+Question
+
+Create a simple grade calculator.
+
+Answer
+marks = int(input("Enter marks: "))
+
+if marks >= 90:
+    print("A")
+elif marks >= 80:
+    print("B")
+elif marks >= 70:
+    print("C")
+elif marks >= 60:
+    print("D")
+else:
+    print("F")
+EXERCISE 32 — LOOPS AND LISTS
+Question 1
+
+Create a list and print every element.
+
+Answer
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+for language in languages:
+    print(language)
+Question 2
+
+Calculate sum of numbers.
+
+Answer
+numbers = [10, 20, 30, 40]
+
+total = 0
+
+for number in numbers:
+    total += number
+
+print(total)
+EXERCISE 33 — WHILE LOOPS
+Question
+
+Print numbers 1–10 using while.
+
+Answer
+number = 1
+
+while number <= 10:
+    print(number)
+    number += 1
+Hard
+
+Keep asking until user enters "quit".
+
+Answer
+while True:
+    text = input("Enter something: ")
+
+    if text == "quit":
+        break
+
+    print("You entered:", text)
+EXERCISE 34 — ACCESSING ELEMENTS OF LISTS
+Question
+
+Given:
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+Print:
+
+first element
+last element
+second element
+Answer
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+print(languages[0])
+print(languages[-1])
+print(languages[1])
+EXERCISE 35 — BRANCHES AND FUNCTIONS
+Question
+
+Create a function that determines whether a number is even or odd.
+
+Answer
+def check_number(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+
+print(check_number(10))
+EXERCISE 36 — DESIGNING AND DEBUGGING
+Debugging Question
+
+Find the error:
+
+numbers = [1, 2, 3]
+
+for number in numbers
+    print(number)
+Answer
+
+Missing :.
+
+numbers = [1, 2, 3]
+
+for number in numbers:
+    print(number)
+Hard debugging
+age = input("Age: ")
+
+if age >= 18:
+    print("Adult")
+
+What's wrong?
+
+Answer
+
+input() returns a string.
+
+Correct:
+
+age = int(input("Age: "))
+
+if age >= 18:
+    print("Adult")
+EXERCISE 37 — SYMBOL REVIEW
+Question
+
+Write examples of:
+
++
+-
+*
+/
+%
+>
+<
+>=
+<=
+==
+!=
+Answer
+print(10 + 2)
+print(10 - 2)
+print(10 * 2)
+print(10 / 2)
+print(10 % 2)
+
+print(10 > 2)
+print(10 < 2)
+print(10 >= 2)
+print(10 <= 2)
+print(10 == 2)
+print(10 != 2)
+EXERCISE 38 — READING CODE
+
+The book specifically encourages reading code, identifying functions and variables, tracing values, and annotating confusing sections.
+
+Question
+
+Trace this code:
+
+x = 2
+
+for i in range(3):
+    x = x * 2
+
+print(x)
+Answer
+Initial x = 2
+
+i = 0 → x = 4
+i = 1 → x = 8
+i = 2 → x = 16
+
+Output = 16
+EXERCISE 39 — DOING THINGS TO LISTS
+
+The exercise focuses heavily on list manipulation, especially append(), pop(), joining and working with lists.
+
+Question 1
+
+Add an item to a list.
+
+Answer
+languages = ["Python", "Java"]
+
+languages.append("C++")
+
+print(languages)
+
+Output:
+
+['Python', 'Java', 'C++']
+Question 2
+
+Remove the last item.
+
+Answer
+languages = ["Python", "Java", "C++"]
+
+languages.pop()
+
+print(languages)
+Question 3 — Hard
+
+Create a list of five foods and turn it into one string.
+
+Answer
+foods = ["Pizza", "Pasta", "Rice", "Paneer", "Salad"]
+
+result = ", ".join(foods)
+
+print(result)
+EXERCISE 40 — DICTIONARIES
+
+The book introduces dictionaries and using strings/numbers as keys.
+
+Question 1
+
+Create a student dictionary.
+
+Answer
+student = {
+    "name": "Anjali",
+    "age": 22,
+    "course": "CSE"
+}
+
+print(student)
+Question 2
+
+Access the name.
+
+Answer
+print(student["name"])
+Question 3
+
+Add a new key.
+
+Answer
+student["city"] = "Delhi"
+
+print(student)
+Question 4
+
+Delete a key.
+
+Answer
+del student["age"]
+
+print(student)
+EXERCISE 41 — GOTHONS FROM PLANET PERCAL #25
+
+This starts bringing multiple concepts together.
+
+Mini Coding Question
+
+Create a simple text adventure.
+
+Answer
+print("You enter a room.")
+
+choice = input("Do you go left or right? ")
+
+if choice == "left":
+    print("You find a treasure.")
+elif choice == "right":
+    print("You meet a Gothon.")
+else:
+    print("You stand still.")
+Hard
+
+Add three rooms:
+
+start
+treasure
+monster
+
+Use functions.
+
+Answer
+def start():
+    choice = input("Left or right? ")
+
+    if choice == "left":
+        treasure()
+    else:
+        monster()
+
+
+def treasure():
+    print("You found the treasure!")
+
+
+def monster():
+    print("A Gothon attacks!")
+
+
+start()
+EXERCISE 42 — GOTHONS ARE GETTING CLASSY
+
+Now we introduce classes.
+
+Question
+
+Create a Person class.
+
+Answer
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def introduce(self):
+        print("Hello, I am", self.name)
+
+
+person = Person("Anjali")
+
+person.introduce()
+Understand this carefully
+class Person:
+
+creates a class.
+
+__init__
+
+runs when the object is created.
+
+self.name
+
+stores data inside the object.
+
+person = Person("Anjali")
+
+creates an object.
+
+EXERCISE 43 — YOU MAKE A GAME
+Challenge
+
+Build a mini game:
+
+You are in a room.
+
+1. Open door
+2. Stay
+
+Choice:
+Answer
+def start():
+    print("You are in a room.")
+    print("1. Open door")
+    print("2. Stay")
+
+    choice = input("Choice: ")
+
+    if choice == "1":
+        print("You escaped!")
+    elif choice == "2":
+        print("You stayed.")
+    else:
+        print("Invalid choice.")
+
+
+start()
+EXERCISE 44 — EVALUATING YOUR GAME
+
+Now improve your game.
+
+Question
+
+Add:
+
+input validation
+multiple rooms
+functions
+a winning condition
+a losing condition
+Answer
+def start():
+    print("You are in the starting room.")
+
+    choice = input("Go left or right? ")
+
+    if choice == "left":
+        treasure_room()
+    elif choice == "right":
+        monster_room()
+    else:
+        print("Invalid choice.")
+        start()
+
+
+def treasure_room():
+    print("You found the treasure!")
+    print("YOU WIN!")
+
+
+def monster_room():
+    print("A monster attacks!")
+    print("GAME OVER")
+
+
+start()
+EXERCISE 45 — IS-A, HAS-A, OBJECTS AND CLASSES
+Question
+
+Create:
+
+Car
+Engine
+
+where a car has an engine.
+
+Answer
+class Engine:
+    def start(self):
+        print("Engine started")
+
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def start(self):
+        self.engine.start()
+        print("Car started")
+
+
+car = Car()
+
+car.start()
+
+This demonstrates HAS-A:
+
+Car HAS-A Engine
+EXERCISE 46 — A PROJECT SKELETON
+
+The book moves toward organizing a project into directories/modules.
+
+Question
+
+Create this structure:
+
+my_project/
+    bin/
+    tests/
+    docs/
+    my_project/
+
+and add:
+
+__init__.py
+Answer
+
+Windows PowerShell:
+
+mkdir my_project
+cd my_project
+
+mkdir bin
+mkdir tests
+mkdir docs
+mkdir my_project
+
+New-Item my_project\__init__.py
+New-Item tests\__init__.py
+
+The exact commands depend on your operating system.
+
+EXERCISE 47 — AUTOMATED TESTING
+Question
+
+Create a function:
+
+add(a, b)
+
+Then test it.
+
+Answer
+
+calculator.py
+
+def add(a, b):
+    return a + b
+
+test_calculator.py
+
+import unittest
+
+from calculator import add
+
+
+class TestCalculator(unittest.TestCase):
+
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+Run:
+
+python -m unittest
+EXERCISE 48 — ADVANCED USER INPUT
+Question
+
+Create a function that converts user input into an integer safely.
+
+Answer
+def get_number():
+    while True:
+        try:
+            number = int(input("Enter a number: "))
+            return number
+        except ValueError:
+            print("Please enter a valid number.")
+
+
+number = get_number()
+
+print("You entered:", number)
+
+This combines:
+
+input()
+functions
+while
+try
+except
+EXERCISE 49 — MAKING SENTENCES
+Question
+
+Given:
+
+words = ["I", "love", "Python"]
+
+make:
+
+I love Python
+Answer
+words = ["I", "love", "Python"]
+
+sentence = " ".join(words)
+
+print(sentence)
+Hard
+
+Create a function:
+
+make_sentence(words)
+Answer
+def make_sentence(words):
+    return " ".join(words)
+
+
+words = ["Python", "is", "fun"]
+
+print(make_sentence(words))
+EXERCISE 50 — YOUR FIRST WEBSITE
+
+The uploaded book uses the lpthw.web framework for its original website exercise. It creates a simple application that maps / to an index handler and returns a response.
+
+Because that framework is old, don't blindly install the original Python-2-era dependencies.
+
+Conceptual coding question
+
+Create a minimal web route that returns:
+
+Hello World
+Modern Python alternative
+
+Using Flask:
+
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return "Hello World"
+
+
+if __name__ == "__main__":
+    app.run()
+
+Then visit:
+
+http://127.0.0.1:5000/
+EXERCISE 51 — GETTING INPUT FROM A BROWSER
+
+The book's exercise focuses on how a browser sends a request to a server and how HTML forms can be used to collect input.
+
+Question
+
+Create a webpage containing a form:
+
+Name: [________]
+[Submit]
+Modern Flask answer
+from flask import Flask, request
+
+app = Flask(__name__)
+
+
+@app.route("/", methods=["GET", "POST"])
+def home():
+    if request.method == "POST":
+        name = request.form["name"]
+        return f"Hello, {name}!"
+
+    return """
+    <form method="post">
+        <input name="name">
+        <button type="submit">Submit</button>
+    </form>
+    """
+
+
+if __name__ == "__main__":
+    app.run()
+EXERCISE 52 — THE START OF YOUR WEB GAME
+
+This brings the game concepts into a web application. The book discusses refactoring the game, automated tests, map structure and game endings.
+
+Mini Challenge
+
+Create a web game:
+
+You are in a room.
+
+Choose:
+1. Treasure
+2. Monster
+Answer
+from flask import Flask, request
+
+app = Flask(__name__)
+
+
+@app.route("/", methods=["GET", "POST"])
+def game():
+
+    if request.method == "POST":
+
+        choice = request.form["choice"]
+
+        if choice == "1":
+            return "<h1>You found the treasure! YOU WIN!</h1>"
+
+        elif choice == "2":
+            return "<h1>A monster attacked! GAME OVER!</h1>"
+
+        else:
+            return "<h1>Invalid choice</h1>"
+
+    return """
+    <h1>Welcome to the Game</h1>
+
+    <form method="post">
+
+        <p>Choose your path:</p>
+
+        <input type="radio" name="choice" value="1">
+        Treasure
+
+        <br>
+
+        <input type="radio" name="choice" value="2">
+        Monster
+
+        <br><br>
+
+        <button type="submit">Choose</button>
+
+    </form>
+    """
+
+
+if __name__ == "__main__":
+    app.run()
+🔥 HOW I WANT YOU TO STUDY THIS
+
+Don't try to memorize all 48 exercises.
+
+We'll actually do them one by one.
+
+For every exercise, use this cycle:
+
+READ
+ ↓
+UNDERSTAND
+ ↓
+TYPE CODE YOURSELF
+ ↓
+RUN
+ ↓
+BREAK IT INTENTIONALLY
+ ↓
+READ ERROR
+ ↓
+DEBUG
+ ↓
+SOLVE PRACTICE QUESTIONS
+ ↓
+DO HARD CHALLENGE
+ ↓
+VIVA
+ ↓
+MOVE TO NEXT EXERCISE
+
+That is much closer to the book's intended "write → run → fix → repeat" learning style. The uploaded material explicitly emphasizes writing exercises, executing them, debugging, and revising.
+
+One important thing
+
+Your uploaded book is based on an older Python version, so you'll see things like:
+
+print "Hello"
+
+in the original material.
+
+We'll learn the concept from the book, but write:
+
+print("Hello")
+
+in Python 3.
+
+For the web exercises especially, I'll clearly separate what the book teaches from the modern Python approach, because the book's original lpthw.web setup is dated.
+
+Start with Exercise 0. Do the questions yourself first, send me your ex0.py, and I'll check it like a teacher—then we'll move to Exercise 1 with much deeper explanation + coding questions + debugging + hard challenge.
