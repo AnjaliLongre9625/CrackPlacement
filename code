@@ -1,0 +1,81 @@
+I worked on integrating LangChain OpenWiki with a Python codebase to automatically generate and maintain code documentation.
+The underlying project is a Python financial library based on numpy-financial.
+The library provides financial functions such as:
+•	fv() → Future Value
+•	pv() → Present Value
+•	pmt() → Payment
+•	irr() → Internal Rate of Return
+•	For example, IRR calculates the Internal Rate of Return for a series of cash flows.
+
+OpenWiki is an AI-powered codebase documentation tool.
+I installed OpenWiki globally:
+npm install -g openwiki
+Then verified the installation:
+openwiki --help
+CONFIGURING GEMINI
+Configure the AI provider
+Gemini AI Studio.
+A code wiki for this repository.
+So I configured OpenWiki using:
+OPENWIKI_PROVIDER="gemini"
+OPENWIKI_MODEL_ID="gemini-3.1-flash-lite"
+GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+Openwiki –init 
+openwiki visualize
+
+The configuration was stored in:
+~/.openwiki/.env
+There is also an:
+AGENTS.md
+which helps coding agents understand the generated documentation.
+
+When OpenWiki analyzes the repository, it creates documentation inside:
+1. financial-functions.md This is the human-readable documentation.
+•	What the financial functions do
+•	How functions are related
+•	Important implementation details
+•	Dependencies and code flow
+schemaVersion defines the structure of the metadata, while pageVersion tracks the revision of an individual generated documentation page
+2. .claims/
+This contains OpenWiki's claims/evidence information.
+Think of it as:
+“What does the documentation claim, and what source code supports that claim?”
+So OpenWiki can maintain documentation based on the actual repository instead of treating the Markdown as completely independent documentation.
+3. .page-manifest.json
+This is basically OpenWiki's page tracking/index information.
+It keeps information about the generated documentation pages, such as their identity/version-related metadata.
+You may see fields like:
+{
+  "schemaVersion": 1,
+  "pageVersion": 2
+}
+schemaVersion → tells OpenWiki which structure/version of the metadata format is being used.
+pageVersion → tracks the version/revision of that particular generated page.
+So you can explain:
+“The manifest helps OpenWiki keep track of its generated documentation pages and their metadata versions.”
+________________________________________
+4. .last-update.json
+This stores information about the last OpenWiki update.
+It helps OpenWiki understand the previous documentation state and determine what needs to be updated when the code changes.
+
+MAKE A CODE CHANGE
+git status
+git diff
+git add .
+git commit -m "feat: update financial calculation"
+Push to GitHub
+git push origin main
+Now the source-code change exists on GitHub.
+OPENWIKI UPDATE
+Run OpenWiki update
+This is different from --init.
+For an existing OpenWiki documentation set, I use:
+openwiki –update
+Commit OpenWiki changes
+After verifying the generated documentation:
+git add openwiki
+Then:
+git commit -m "docs: update OpenWiki documentation"
+Then:
+git push origin main
+
